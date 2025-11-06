@@ -37,7 +37,7 @@ stages:
       - job: Deploy
         displayName: Deploy
         pool:
-          vmImage: 'ubuntu-latest'
+          name: 'Default'
         steps:
           - task: AzureWebAppContainer@1
             displayName: 'Deploy to Azure Web App'
