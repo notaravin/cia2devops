@@ -41,7 +41,7 @@ stages:
         pool:
           name: 'Default'              # Use the correct pool name
           demands:
-            - Agent.Name -equals G15-ARA        # Ensures it uses your self-hosted agent
+            - Agent.Name -equals agent11        # Ensures it uses your self-hosted agent
         steps:
           - task: AzureWebAppContainer@1
             displayName: 'Deploy to Azure Web App'
