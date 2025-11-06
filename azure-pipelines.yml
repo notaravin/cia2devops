@@ -6,7 +6,7 @@ resources:
 
 variables:
   dockerRegistryServiceConnection: 'cia2do-acr-connection'
-  imageRepository: 'my-web-app'
+  imageRepository: 'cia2do'
   containerRegistry: 'mywebappregistry.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   tag: '$(Build.BuildId)'
