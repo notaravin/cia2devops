@@ -47,5 +47,5 @@ stages:
             displayName: 'Deploy to Azure Web App'
             inputs:
               azureSubscription: 'cia2do-azure-connection'
-              appName: 'my-web-app-service'
+              appName: 'cia2do'
               containers: '$(containerRegistry)/$(imageRepository):latest'
