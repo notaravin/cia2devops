@@ -5,7 +5,7 @@ resources:
   - repo: self
 
 variables:
-  dockerRegistryServiceConnection: 'YOUR_SERVICE_CONNECTION_ID'
+  dockerRegistryServiceConnection: 'cia2do-acr-connection'
   imageRepository: 'my-web-app'
   containerRegistry: 'mywebappregistry.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
@@ -42,6 +42,6 @@ stages:
           - task: AzureWebAppContainer@1
             displayName: 'Deploy to Azure Web App'
             inputs:
-              azureSubscription: 'YOUR_AZURE_SERVICE_CONNECTION'
+              azureSubscription: 'cia2do-azure-connection'
               appName: 'my-web-app-service'
               containers: '$(containerRegistry)/$(imageRepository):latest'
